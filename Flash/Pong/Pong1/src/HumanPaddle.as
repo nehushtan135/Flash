@@ -27,25 +27,15 @@ package
 		}
 		public function movePad(e:KeyboardEvent):void
 		{
-			if (Hpaddle.y <= Hpaddle.height / 2) {
-				switch(e.keyCode) {
-					case Keyboard.UP:
-						Hpaddle.y += 2;					
-						break;
-				
-					case Keyboard.DOWN:
-					
-						break;
-				
-					case Keyboard.LEFT:
-				
-						break;
-				
-					case Keyboard.RIGHT:
-				
-						break;
-				
+			if (e.keyCode == Keyboard.UP )
+			{
+				if ( Hpaddle.y > Hpaddle.height / 2)
+				{
+					Hpaddle.y -= 5;
 				}
+			}
+			if (e.keyCode == Keyboard.DOWN && Hpaddle.y >= sHi - Hpaddle.height / 2) {
+				Hpaddle.y += 5;
 			}
 		}
 	}

@@ -46,7 +46,7 @@ package
 			paddle2.y = 200;
 			// add 
 			addChild(spaceToBegin);
-			addChild(paddle1);
+			//addChild(paddle1);
 			addChild(paddle2);
 			
 			init();
@@ -74,7 +74,6 @@ package
 		private function init():void
 		{
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, reportSpace);
-			stage.addEventListener(KeyboardEvent.KEY_UP,  unReportSpace);
 		}
 		
 		public function reportSpace(event:KeyboardEvent):void {
@@ -83,9 +82,6 @@ package
 				stage.removeEventListener(KeyboardEvent.KEY_DOWN, reportSpace);
 				stage.addEventListener(Event.ENTER_FRAME, gameLoop);
 			}
-			
-		}
-		public function unReportSpace(event:KeyboardEvent):void {
 			
 		}
 		private function gameLoop(e:Event):void
