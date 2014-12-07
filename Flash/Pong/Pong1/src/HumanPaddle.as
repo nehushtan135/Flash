@@ -29,13 +29,15 @@ package
 		{
 			if (e.keyCode == Keyboard.UP )
 			{
-				if ( Hpaddle.y > Hpaddle.height / 2)
+				if ( Hpaddle.y >= 0)
 				{
-					Hpaddle.y -= 5;
+					Hpaddle.y -= 7;
 				}
 			}
-			if (e.keyCode == Keyboard.DOWN && Hpaddle.y >= sHi - Hpaddle.height / 2) {
-				Hpaddle.y += 5;
+			if (e.keyCode == Keyboard.DOWN) {
+				if (Hpaddle.y <= sHi - Hpaddle.height) {
+					Hpaddle.y += 7;	
+				}
 			}
 		}
 	}
