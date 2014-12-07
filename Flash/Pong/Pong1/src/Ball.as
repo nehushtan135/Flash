@@ -27,6 +27,9 @@ package
 		    sWi = s.stageWidth;
 			s.addChild(ball);
 		}
+		public function getY():int {
+			return this.ball.y;
+		}
 		public function startBall(e:Event):void
 		{
 			

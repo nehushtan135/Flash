@@ -40,6 +40,9 @@ package
 				}
 			}
 		}
+		
+		//to be added later
+		//public function reSize(e:event):void
 	}
 
 }
