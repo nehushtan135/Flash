@@ -29,12 +29,19 @@ package
 		// tommorow....
 		
 		public function startCpu(e:Event, bY:int):void {
-		    if (aPad.y < bY - 10) {
-					aPad.y += cpuSpeed;
+			if ((aPad.y > sHi - aPad.height)) {
+				aPad.y = aPad.y;
 			}
-			if (aPad.y > bY +10) {
-				aPad.y -= cpuSpeed;
+			else if (aPad.y <= bY - 10) {
+				aPad.y += cpuSpeed;
 			}
+			if (aPad.y < 0) 
+				{
+					aPad.y = aPad.y;
+				}
+			else if (aPad.y > bY +10) {
+					aPad.y -= cpuSpeed;
+				}
 				
 		}
 		
