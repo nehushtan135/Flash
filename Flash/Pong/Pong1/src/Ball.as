@@ -17,7 +17,7 @@ package
 		public var sHi:int;
 		public var sWi:int;
 		public var ballSpeedX:int =  3;
-	    public var ballSpeedY:int =  2;
+	    public var ballSpeedY:int =  -2;
 		
 		public function Ball(s:Stage) 
 		{

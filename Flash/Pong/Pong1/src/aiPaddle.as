@@ -39,7 +39,7 @@ package
 				{
 					aPad.y = aPad.y;
 				}
-			else if (aPad.y > bY +10) {
+			else if (aPad.y > bY ) {
 					aPad.y -= cpuSpeed;
 				}
 				
